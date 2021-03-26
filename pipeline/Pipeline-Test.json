@@ -22,9 +22,18 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "MyString",
+					"value": "Hello World"
+				}
 			}
 		],
+		"variables": {
+			"MyString": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
