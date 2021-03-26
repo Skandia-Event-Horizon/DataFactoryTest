@@ -10,8 +10,30 @@
 				"typeProperties": {
 					"waitTimeInSeconds": 10
 				}
+			},
+			{
+				"name": "Set Variable",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Wait 10 Seconds",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "MyString",
+					"value": "Hello World"
+				}
 			}
 		],
+		"variables": {
+			"MyString": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
